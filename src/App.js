@@ -79,11 +79,12 @@ function App() {
             // simulate an asynchronous action
             setTimeout(() => {
               dispatch({ type: FINISH_SUBMIT });
-            }, 2000);
+            }, 1000);
           }}
         >
           <label htmlFor="email">Email</label>
           <input
+            id="email"
             type="email"
             value={email}
             onChange={(e) => {
@@ -96,6 +97,7 @@ function App() {
 
           <label htmlFor="password">Password</label>
           <input
+            id="password"
             type="password"
             value={password}
             onChange={(e) => {
