@@ -1,0 +1,6 @@
+{
+  "browsers": {
+    "path": "/Applications/Google Chrome.app/",
+    "cmd": "--no-first-run --no-default-browser-check --user-data-dir=/tmp/testcafe-chrome-profile --load-extension=/Users/brookslybrand/git/testcafe-bugreplay-demo/node_modules/bugreplay-automation/extension --auto-select-desktop-capture-source='Chrome'"
+  }
+}

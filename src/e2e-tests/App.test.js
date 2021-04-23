@@ -1,6 +1,9 @@
 import { Selector } from "testcafe";
+import bugReplay from "testcafe-bugreplay";
 
-fixture`TestCafe — BugReplay demo`.page`http://localhost:3000`;
+bugReplay(fixture`TestCafe — BugReplay demo`.page`http://localhost:3000`, {
+  apiKey: process.env.BUG_REPLAY_API_KEY,
+});
 
 test("Successfully authenticate user", async (t) => {
   const email = "user@example.com";
